@@ -1,2 +1,2 @@
 # ANICLOT
-ANICLOT is an online store where you can buy clothes with a character from your favorite anime.
+ANICLOT — интернет-магазин, где вы можете купить одежду с персонажем любимого аниме.

@@ -1,0 +1,234 @@
+.page {
+    display: grid;
+    justify-content: center;
+    background: #F1F4F5;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 1920px;
+    padding: 20px;
+    gap: 100px;
+}
+
+.header {
+    
+}
+
+.header__menu {
+    
+}
+
+.header__menu-logo {
+    
+}
+
+.header__menu-container {
+    
+}
+
+.header__menu-button {
+    
+}
+
+.header__contact-container {
+    
+}
+
+.header__contact-icon {
+    
+}
+
+.header__contact-number {
+    
+}
+
+.header__user-container {
+    
+}
+
+.header__user-icon {
+    
+}
+
+.header__user-email {
+    
+}
+
+.header__user-points {
+    
+}
+
+.header__icons-container {
+    
+}
+
+.icon-container {
+    
+}
+
+.header__search-icon {
+    
+}
+
+.header__heart-icon {
+    
+}
+
+.header__handbag-icon {
+    
+}
+
+.arrows {
+    
+}
+
+.arrows-left {
+    
+}
+
+.arrows-right {
+    
+}
+
+.header__image {
+    
+}
+
+.main {
+    
+}
+
+.main__header-container {
+    
+}
+
+.main__header-text {
+    
+}
+
+.main__header-button {
+    
+}
+
+.main__button-text {
+    
+}
+
+.main__button-arrow {
+    
+}
+
+.main__card-container {
+    
+}
+
+.card {
+    
+}
+
+.card__text {
+    
+}
+
+.card__heart-icon {
+    
+}
+
+.card__clothes-image {
+    
+}
+
+.card__container {
+    
+}
+
+.card__description-container {
+    
+}
+
+.card__description-title {
+    
+}
+
+.card__description-text {
+    
+}
+
+.card__price {
+    
+}
+
+.card__price-actually {
+    
+}
+
+.card__price-previous {
+    
+}
+
+.footer {
+    
+}
+
+.footer__left-container {
+    
+}
+
+.footer__center-container {
+    
+}
+
+.footer__right-container {
+    
+}
+
+.card__collection {
+    
+}
+
+.card__collection-container {
+    
+}
+
+.card__collection-title {
+    
+}
+
+.card__collection-name {
+    
+}
+
+.card__collection-anime {
+    
+}
+
+.card__collection-button {
+    
+}
+
+.card__collection-arrow {
+    
+}
+
+.card__collection-image {
+    
+}
+
+.footer__center-collection {
+    
+}
+
+.footer__popular-collection {
+    
+}
+
+.footer__center-button {
+    
+}
+
+.footer__button-text {
+
+}
+
+.footer__button-arrow {
+
+}
