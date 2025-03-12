@@ -5,132 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="test-project" />
     <title>ANICLOT</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+    </style>
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/index.css" />
 </head>
 <body class="page">
     <header class="header">
         <nav class="header__menu">
-            <img src="./images/logo.png" loading="lazy" alt="" class="header__menu-logo">
+            <img src="./images/logo.png" loading="lazy" alt="лого" class="header__menu-logo">
             <div class="header__menu-container">
-                <button class="header__menu-button">Аниме</button>
-                <button class="header__menu-button">Футболки</button>
-                <button class="header__menu-button">Лонгсливы</button>
-                <button class="header__menu-button">Худи</button>
-                <button class="header__menu-button">Инфо</button>
-                <button class="header__menu-button">Новости</button>
-                <button class="header__menu-button">Контакты</button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Аниме</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Футболки</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Лонгсливы</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Худи</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Инфо</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Новости</p>
+                </button>
+                <button class="header__menu-button" type="button">
+                    <p class="menu__button-text">Контакты</p>
+                </button>
             </div>
             <div class="header__contact-container">
-                <img src="./images/svg/telephone.svg" loading="lazy" alt="" class="header__contact-icon">
-                <p class="header__contact-number">+7 900 000-00-00</p>
+                <img src="./images/svg/telephone.svg" loading="lazy" alt="значок телефона">
+                <button class="header__contact-button" type="button" onclick="window['call-back'].showModal()" aria-controls="call-back">
+                    <p class="header__contact-number">+7 900 000-00-00</p>
+                </button>
             </div>
             <div class="header__user-container">
-                <img src="./images/svg/user.svg" loading="lazy" alt="" class="header__user-icon">
-                <p class="header__user-email">Alexsandеr@gmail.com</p>
-                <p class="header__user-points">10 000 бал.</p>
+                <img src="./images/svg/user.svg" loading="lazy" alt="значок пользователя">
+                <button class="header__user-button" type="button">
+                    <p class="header__user-email">Alexsandеr@gmail.com</p>
+                </button>
+                <button class="header__points-button" type="button">
+                    <p class="header__user-points">10 000 бал.</p>
+                </button>
             </div>
             <div class="header__icons-container">
-                <button class="icon-container">
-                    <img src="./images/svg/loupe.svg" loading="lazy" alt="" class="header__search-icon">
+                <button class="icon-container" type="button">
+                    <img src="./images/svg/loupe.svg" loading="lazy" alt="значок поиска">
                     <span class="notification visually-hidden"></span>
                 </button>
-                <button class="icon-container">
-                    <img src="./images/svg/heart.svg" loading="lazy" alt="" class="header__heart-icon">
+                <button class="icon-container" type="button">
+                    <img src="./images/svg/heart.svg" loading="lazy" alt="значок сердечка">
                     <span class="notification"></span>
                 </button>
-                <button class="icon-container">
-                    <img src="./images/svg/handbag.svg" loading="lazy" alt="" class="header__handbag-icon">
+                <button class="icon-container" type="button">
+                    <img src="./images/svg/handbag.svg" loading="lazy" alt="значок сумочки">
                     <span class="notification"></span>
                 </button>
             </div>
         </nav>
-        <button class="arrows">
-            <img src="./images/svg/arrow-left.svg" loading="lazy" alt="" class="arrows-left">
-        </button>
-        <button class="arrows">
-            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="arrows-right">
-        </button>
-        <img src="./images/aniclot-collection.png" loading="lazy" alt="" class="header__image">
-    </header>
-    <main class="main">
-        <div class="main__header-container">
-            <p class="main__header-text">Новинки</p>
-            <button class="main__header-button">
-                <p class="main__button-text">Все новинки</p>
-                <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="main__button-arrow">
+        <div class="arrows-container">
+            <button class="arrows arrows__header-left" type="button">
+                <img src="./images/svg/arrow-left.svg" loading="lazy" alt="стрелка влево" class="header__arrows">
+            </button>
+            <button class="arrows arrows__header-right" type="button">
+                <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="header__arrows">
             </button>
         </div>
-        <section class="main__card-container">
-            <article class="card">
-                <p class="card__text">NEW!</p>
-                <img src="./images/svg/heart.svg" loading="lazy" alt="" class="card__heart-icon">
-                <img src="./images/t-shirt[0].png" loading="lazy" alt="" class="card__clothes-image">
-                <div class="card__container">
-                    <div class="card__description-container">
-                        <p class="card__description-title">клинок рассекающий демонов</p>
-                        <p class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</p>
-                    </div>
-                    <div class="card__price">
-                        <p class="card__price-actually">10 000 ₽</p>
-                        <p class="card__price-previous">20 000 ₽</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <p class="card__text">NEW!</p>
-                <img src="./images/svg/heart.svg" loading="lazy" alt="" class="card__heart-icon">
-                <img src="./images/t-shirt[1].png" loading="lazy" alt="" class="card__clothes-image">
-                <div class="card__container">
-                    <div class="card__description-container">
-                        <p class="card__description-title">клинок рассекающий демонов</p>
-                        <p class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</p>
-                    </div>
-                    <div class="card__price">
-                        <p class="card__price-actually">10 000 ₽</p>
-                        <p class="card__price-previous">20 000 ₽</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <p class="card__text">NEW!</p>
-                <img src="./images/svg/heart.svg" loading="lazy" alt="" class="card__heart-icon">
-                <img src="./images/t-shirt[2].png" loading="lazy" alt="" class="card__clothes-image">
-                <div class="card__container">
-                    <div class="card__description-container">
-                        <p class="card__description-title">клинок рассекающий демонов</p>
-                        <p class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</p>
-                    </div>
-                    <div class="card__price">
-                        <p class="card__price-actually">10 000 ₽</p>
-                        <p class="card__price-previous">20 000 ₽</p>
-                    </div>
-                </div>
-            </article>
-            <article class="card">
-                <p class="card__text">NEW!</p>
-                <img src="./images/svg/heart.svg" loading="lazy" alt="" class="card__heart-icon">
-                <img src="./images/t-shirt[3].png" loading="lazy" alt="" class="card__clothes-image">
-                <div class="card__container">
-                    <div class="card__description-container">
-                        <p class="card__description-title">клинок рассекающий демонов</p>
-                        <p class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</p>
-                    </div>
-                    <div class="card__price">
-                        <p class="card__price-actually">10 000 ₽</p>
-                        <p class="card__price-previous">20 000 ₽</p>
-                    </div>
-                </div>
-            </article>
-            <button class="arrows">
-                <img src="./images/svg/arrow-left.svg" loading="lazy" alt="" class="arrows-left">
-            </button>
-            <button class="arrows">
-                <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="arrows-right">
+        <img src="./images/aniclot-collection.png" loading="lazy" alt="главный постер сайта с надписью aniclot-collection" class="header__image">
+    </header>
+    <main class="main">
+        <section class="main__header-container">
+            <h2 class="main__header-text">Новинки</h2>
+            <button class="main__header-button" type="button">
+                <p class="main__button-text">Все новинки</p>
+                <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="main__button-arrow">
             </button>
         </section>
+        <section class="main__card-container">
+            <article class="card">
+                <div class="card__header-container">
+                    <p class="card__text">New!</p>
+                    <img src="./images/svg/heart.svg" loading="lazy" alt="значок сердечка" class="card__heart-icon">
+                </div>
+                <img src="./images/t-shirt[0].png" loading="lazy" alt="футболка аниме клинок рассекающий демонов" class="card__clothes-image">
+                <div class="card__container">
+                    <div class="card__description-container">
+                        <h6 class="card__description-title">клинок рассекающий демонов</h6>
+                        <h6 class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</h6>
+                    </div>
+                    <div class="card__price">
+                        <h5 class="card__price-actually">10 000 ₽</h5>
+                        <p class="card__price-previous">20 000 ₽</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header-container">
+                    <p class="card__text">New!</p>
+                    <img src="./images/svg/heart.svg" loading="lazy" alt="значок сердечка" class="card__heart-icon">
+                </div>
+                <img src="./images/t-shirt[1].png" loading="lazy" alt="футболка аниме магическая битва" class="card__clothes-image">
+                <div class="card__container">
+                    <div class="card__description-container">
+                        <h6 class="card__description-title">магическая битва</h6>
+                        <h6 class="card__description-text">Футболка Магическая битва<br><span class="visually-hidden"></span></br></p>
+                    </div>
+                    <div class="card__price">
+                        <h5 class="card__price-actually">10 000 ₽</h5>
+                        <p class="card__price-previous">20 000 ₽</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header-container">
+                    <p class="card__text">New!</p>
+                    <img src="./images/svg/heart.svg" loading="lazy" alt="значок сердечка" class="card__heart-icon">
+                </div>
+                <img src="./images/t-shirt[2].png" loading="lazy" alt="футболка аниме клинок рассекающий демонов" class="card__clothes-image">
+                <div class="card__container">
+                    <div class="card__description-container">
+                        <h6 class="card__description-title">клинок рассекающий демонов</h6>
+                        <h6 class="card__description-text">Футболка аниме клинок рассекающий демонов, чёрный цвет, 46 размер, 100% хлопок</h6>
+                    </div>
+                    <div class="card__price">
+                        <h5 class="card__price-actually">10 000 ₽</h5>
+                        <p class="card__price-previous">20 000 ₽</p>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card__header-container">
+                    <p class="card__text">New!</p>
+                    <img src="./images/svg/heart.svg" loading="lazy" alt="значок сердечка" class="card__heart-icon">
+                </div>
+                <img src="./images/t-shirt[3].png" loading="lazy" alt="футболка аниме магическая битва" class="card__clothes-image">
+                <div class="card__container">
+                    <div class="card__description-container">
+                        <h6 class="card__description-title">магическая битва</h6>
+                        <h6 class="card__description-text">Футболка Магическая битва<br><span class="visually-hidden"></span></br></p>
+                    </div>
+                    <div class="card__price">
+                        <h5 class="card__price-actually">10 000 ₽</h5>
+                        <p class="card__price-previous">20 000 ₽</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="arrows-container">
+            <button class="arrows arrows__main-left" type="button">
+                <img src="./images/svg/arrow-left.svg" loading="lazy" alt="стрелка влево" class="main__arrows">
+            </button>
+            <button class="arrows arrows__main-right" type="button">
+                <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="main__arrows">
+            </button>
+        </div>
     </main>
     <footer class="footer">
         <section class="footer__left-container">
@@ -138,111 +174,135 @@
                 <div class="card__collection-container">
                     <div class="card__collection-title">
                         <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                        <h4 class="card__collection-anime">Магическая битва</h4>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
+                    <button class="card__collection-button" type="button">
+                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
                     </button>
                 </div>
-                <img src="./images/photoroom[0].png" loading="lazy" alt="" class="card__collection-image">
+                <img src="./images/photoroom[0].png" loading="lazy" alt="постер Юдзи" class="card__collection-image">
             </article>
             <article class="card__collection">
                 <div class="card__collection-container">
                     <div class="card__collection-title">
                         <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                        <h4 class="card__collection-anime">Берсерк</h4>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
+                    <button class="card__collection-button" type="button">
+                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
                     </button>
                 </div>
-                <img src="./images/big-photoroom[0].png" loading="lazy" alt="" class="card__collection-image">
+                <img src="./images/big-photoroom[0].png" loading="lazy" alt="постер Гатс с мечом" class="card__collection-big-image">
             </article>
         </section>
         <section class="footer__center-container">
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+            <div class="center-colection-container">
+                <article class="card__collection">
+                    <div class="card__collection-container">
+                        <div class="card__collection-title">
+                            <p class="card__collection-name">Коллекция</p>
+                            <h4 class="card__collection-anime">Человек - бензопила</h4>
+                        </div>
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
-                    </button>
-                </div>
-                <img src="./images/photoroom[1].png" loading="lazy" alt="" class="card__collection-image">
-            </article>
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                    <img src="./images/photoroom[1].png" loading="lazy" alt="постер Дэндзи и Почито" class="card__collection-image">
+                </article>
+                <article class="card__collection">
+                    <div class="card__collection-container">
+                        <div class="card__collection-title">
+                            <p class="card__collection-name">Коллекция</p>
+                            <h4 class="card__collection-anime">Евангелион</h4>
+                        </div>
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
-                    </button>
-                </div>
-                <img src="./images/photoroom[2].png" loading="lazy" alt="" class="card__collection-image">
-            </article>
+                    <img src="./images/photoroom[3].png" loading="lazy" alt="постер Рей" class="card__collection-image">
+                </article>
+            </div>
             <div class="footer__center-collection">
                 <h2 class="footer__popular-collection">Популярные коллекции</h2>
-                <button class="footer__center-button">
+                <button class="footer__center-button" type="button">
                     <p class="footer__button-text">Все коллекции</p>
-                    <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="footer__button-arrow">
+                    <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="footer__button-arrow">
                 </button>
             </div>
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+            <div class="center-colection-container">
+                <article class="card__collection">
+                    <div class="card__collection-container">
+                        <div class="card__collection-title">
+                            <p class="card__collection-name">Коллекция</p>
+                            <h4 class="card__collection-anime">Моя геройская академия</h4>
+                        </div>
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
-                    </button>
-                </div>
-                <img src="./images/photoroom[3].png" loading="lazy" alt="" class="card__collection-image">
-            </article>
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                    <img src="./images/photoroom[2].png" loading="lazy" alt="постер Бакуго и Мидория" class="card__collection-image">
+                </article>
+                <article class="card__collection">
+                    <div class="card__collection-container">
+                        <div class="card__collection-title">
+                            <p class="card__collection-name">Коллекция</p>
+                            <h4 class="card__collection-anime">Блич</h4>
+                        </div>
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
-                    </button>
-                </div>
-                <img src="./images/photoroom[4].png" loading="lazy" alt="" class="card__collection-image">
-            </article>
+                    <img src="./images/photoroom[4].png" loading="lazy" alt="постер Ичиго" class="card__collection-image">
+                </article>
+            </div>
         </section>
         <section class="footer__right-container">
             <article class="card__collection">
                 <div class="card__collection-container">
                     <div class="card__collection-title">
                         <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                        <h4 class="card__collection-anime">Клинок рассекающий демонов</h4>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
+                    <button class="card__collection-button" type="button">
+                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
                     </button>
                 </div>
-                <img src="./images/big-photoroom[1].png" loading="lazy" alt="" class="card__collection-image">
+                <img src="./images/big-photoroom[1].png" loading="lazy" alt="постер Танджиро" class="card__collection-big-image">
             </article>
             <article class="card__collection">
                 <div class="card__collection-container">
                     <div class="card__collection-title">
                         <p class="card__collection-name">Коллекция</p>
-                        <p class="card__collection-anime">Клинок рассекающий демонов</p>
+                        <h4 class="card__collection-anime">One-Punch Man</h4>
                     </div>
-                    <button class="card__collection-button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="" class="card__collection-arrow">
+                    <button class="card__collection-button" type="button">
+                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
                     </button>
                 </div>
-                <img src="./images/photoroom[5].png" loading="lazy" alt="" class="card__collection-image">
+                <img src="./images/photoroom[5].png" loading="lazy" alt="постер Сайтама" class="card__collection-image">
             </article>
         </section>
     </footer>
+    <dialog id="call-back" class="call-back">
+        <div class="close__call-back-container">
+            <button class="close__call-back" type="button" onclick="window['call-back'].close()">
+                <img src="./images/x.png" loading="lazy" alt="кнопка закрытия модального окна">
+            </button>
+        </div>
+        <div class="call-back-container">
+            <h3 class="call-back__title">Обратный звонок</h3>
+            <form method="dialog" class="call-back__form">
+                <div class="form__info-container">
+                    <input class="form__info" type="text" placeholder="Имя">
+                    <input class="form__info" type="tel" placeholder="Номер телефона">
+                </div>
+                <div class="form__send-container">
+                    <button class="call-back__button" type="button" onclick="window['call-back'].close()">Отправить</button>
+                    <p class="call-back__notice">Нажимая кнопку, вы соглашаетесь с обработкой <br> ваших персональных данных</p>
+                </div>
+            </form>
+        </div>
+    </dialog>
     <script src="./scripts/index.js"></script>
 </body>
 </html>
