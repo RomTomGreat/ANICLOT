@@ -182,17 +182,19 @@
                 </div>
                 <img src="./images/photoroom[0].png" loading="lazy" alt="постер Юдзи" class="card__collection-image">
             </article>
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <h4 class="card__collection-anime">Берсерк</h4>
-                    </div>
-                    <button class="card__collection-button" type="button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
-                    </button>
+            <article class="card__collection-big">
+                <div class="card__collection-title-big">
+                    <p class="card__collection-name">Коллекция</p>
+                    <h4 class="card__collection-anime">Берсерк</h4>
                 </div>
-                <img src="./images/big-photoroom[0].png" loading="lazy" alt="постер Гатс с мечом" class="card__collection-big-image">
+                <div class="card__collection-container-big">
+                    <div class="card__collection-button-container">
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
+                    </div>
+                    <img src="./images/big-photoroom[0].png" loading="lazy" alt="постер Гатс с мечом" class="card__collection-big-image">
+                </div>
             </article>
         </section>
         <section class="footer__center-container">
@@ -257,17 +259,19 @@
             </div>
         </section>
         <section class="footer__right-container">
-            <article class="card__collection">
-                <div class="card__collection-container">
-                    <div class="card__collection-title">
-                        <p class="card__collection-name">Коллекция</p>
-                        <h4 class="card__collection-anime">Клинок рассекающий демонов</h4>
-                    </div>
-                    <button class="card__collection-button" type="button">
-                        <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
-                    </button>
+            <article class="card__collection-big">
+                <div class="card__collection-title-big">
+                    <p class="card__collection-name">Коллекция</p>
+                    <h4 class="card__collection-anime">Клинок рассекающий демонов</h4>
                 </div>
-                <img src="./images/big-photoroom[1].png" loading="lazy" alt="постер Танджиро" class="card__collection-big-image">
+                <div class="card__collection-container-big">
+                    <div class="card__collection-button-container">
+                        <button class="card__collection-button" type="button">
+                            <img src="./images/svg/arrow-right.svg" loading="lazy" alt="стрелка вправо" class="card__collection-arrow">
+                        </button>
+                    </div>
+                    <img src="./images/big-photoroom[1].png" loading="lazy" alt="постер Танджиро" class="card__collection-big-image">
+                </div>
             </article>
             <article class="card__collection">
                 <div class="card__collection-container">
@@ -297,7 +301,7 @@
                     <input class="form__info" type="tel" placeholder="Номер телефона">
                 </div>
                 <div class="form__send-container">
-                    <button class="call-back__button" type="button" onclick="window['call-back'].close()">Отправить</button>
+                    <button class="call-back__button" type="submit" onclick="window['call-back'].close()">Отправить</button>
                     <p class="call-back__notice">Нажимая кнопку, вы соглашаетесь с обработкой <br> ваших персональных данных</p>
                 </div>
             </form>

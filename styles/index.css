@@ -46,6 +46,7 @@
     text-transform: uppercase;
     color: #ffffff;
     word-spacing: 1px;
+    cursor: pointer;
 }
 
 .header__contact-container {
@@ -57,6 +58,7 @@
 .header__contact-button {
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .header__contact-number {
@@ -74,6 +76,7 @@
 .header__user-button {
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .header__user-email {
@@ -106,10 +109,7 @@
     align-items: center;
     border: none;
     background: transparent;
-}
-
-.notification {
-    
+    cursor: pointer;
 }
 
 .arrows-container {
@@ -122,6 +122,7 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
     gap: 10px;
 }
 
@@ -200,6 +201,7 @@
     border: none;
     border-radius: 10px;
     height: 52px;
+    cursor: pointer;
     gap: 10px;
 }
 
@@ -243,6 +245,7 @@
 
 .card__heart-icon {
     filter: invert(1);
+    cursor: pointer;
     width: 20px;
     height: 20px;
 }
@@ -323,6 +326,8 @@
 
 .footer {
     display: flex;
+    position: relative;
+    bottom: 84px;
     max-width: 1880px;
     gap: 20px;
 }
@@ -336,7 +341,7 @@
 .footer__center-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
 .footer__right-container {
@@ -360,6 +365,17 @@
     gap: 13px;
 }
 
+.card__collection-big {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
+    background: #231F20;
+    width: 455px;
+    gap: 40px;
+}
+
 .card__collection-container {
     display: flex;
     flex-direction: column;
@@ -369,7 +385,20 @@
     padding-bottom: 22.5px;
 }
 
+.card__collection-container-big {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .card__collection-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.card__collection-title-big {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -391,12 +420,17 @@
     color: #FFFFFF;
 }
 
+.card__collection-button-container {
+    padding-bottom: 20px;
+}
+
 .card__collection-button {
     display: flex;
     padding: 10px;
     border: none;
     background: #666666;
     border-radius: 10px;
+    cursor: pointer;
     gap: 10px;
 }
 
@@ -412,6 +446,8 @@
 }
 
 .card__collection-big-image {
+    position: relative;
+    left: 60px;
     max-width: 331px;
     max-height: 438px;
 }
@@ -434,6 +470,7 @@
 
 .footer__center-button {
     display: flex;
+    align-items: center;
     background: #231F20;
     border: none;
     border-radius: 10px;
@@ -441,6 +478,7 @@
     padding-right: 20px;
     padding-top: 14px;
     padding-bottom: 14px;
+    cursor: pointer;
     gap: 10px;
 }
 
@@ -553,6 +591,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
     gap: 10px;
 }
 
